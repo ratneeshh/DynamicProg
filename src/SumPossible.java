@@ -68,6 +68,7 @@ public static void main(String[] args) {
         for (int i = 0; i < arr.length ; i++) {
 
             if(testSum(n-arr[i] , arr , memo)) {
+                memo.put(n, true);
                 return true;
             }
         }
